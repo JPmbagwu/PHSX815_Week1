@@ -1,9 +1,26 @@
-#! /usr/bin/env python
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[34]:
+
 
 # imports of external packages to use in our code
+
+get_ipython().run_line_magic('matplotlib', 'inline')
+
 import sys
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import rc, rcParams
+
+# Make use of TeX\ufeff
+rc('text',usetex=True)
+# Change all fonts to 'Computer Modern'
+rc('font',**{'size':14, 'family':'serif','serif':['Times New Roman']})
+rc('xtick.major', size=5, pad=7)
+rc('xtick', labelsize=15)
+rc('ytick.major', size=5, pad=7)
+rc('ytick', labelsize=15)
 
 #################
 # Random class
@@ -12,8 +29,8 @@ import matplotlib.pyplot as plt
 class Random:
     """A random number generator class"""
 
-    # initialization method for Random class
-    def __init__(self, seed = 5555):
+    # initialization method for Random number class
+    def __init__(self, seed = 4444):
         self.seed = seed
         self.m_v = np.uint64(4101842887655102017)
         self.m_w = np.uint64(1)
@@ -52,7 +69,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # default seed
-    seed = 5555
+    seed = 4444
 
     # read the user-provided seed from the command line (if there)
     if '-seed' in sys.argv:
@@ -66,7 +83,7 @@ if __name__ == "__main__":
     random = Random(seed)
 
     # create some random data
-    N = 10000
+    N = 20000
 
     # an array of random numbers from numpy
     x = np.random.rand(N)
@@ -77,7 +94,7 @@ if __name__ == "__main__":
         myx.append(random.rand())
 
     # create histogram of our data
-    n, bins, patches = plt.hist(myx, 50, density=True, facecolor='g', alpha=0.75)
+    n, bins, patches = plt.hist(myx, 70, density=True, facecolor='r', alpha=0.75)
 
     # plot formating options
     plt.xlabel('x')
@@ -85,6 +102,14 @@ if __name__ == "__main__":
     plt.title('Uniform random number')
     plt.grid(True)
 
+    # Tweak spacing to prevent clipping of ylabel
+    plt.tight_layout()
     # show figure (program only ends once closed
     plt.show()
+
+
+# In[ ]:
+
+
+
 
