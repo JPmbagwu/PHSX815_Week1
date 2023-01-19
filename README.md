@@ -2,7 +2,7 @@
 
 # Random number generation and data visualization
 
-One example of simple data visualization and random number generation can be found in this repository (plotting). One plotting library was used; setup and installation instructions can be found at the sites below. Users must independently download and setup these libraries.
+One example of simple data visualization and random number generation can be found in this repository (plotting). One plotting library was used; setup and installation instructions can be found at the sites below. Users must independently download and setup this library.
 
 * matplotlib (Python)
 
