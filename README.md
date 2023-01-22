@@ -2,7 +2,7 @@
 
 # Random number generation and data visualization
 
-One example of simple data visualization and random number generation can be found in this repository (plotting). The following libraries are required to run these programs:
+This repository contains an illustration of basic data visualization and random number generating (plotting). Running these programs requires the following libraries:
 
 * rcParams
 * numpy
