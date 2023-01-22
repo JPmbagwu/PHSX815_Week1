@@ -8,5 +8,4 @@ One example of simple data visualization and random number generation can be fou
 * numpy
 * matplotlib (Python)
 
-This requires a working Python distribution (so that the python executable exists) with the Python package numpy and latex also installed.
-
+These require a functional Python distribution with the Python packages numpy and latex additionally installed (so that the python executable exists).
