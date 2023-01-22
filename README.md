@@ -8,10 +8,5 @@ One example of simple data visualization and random number generation can be fou
 * numpy
 * matplotlib (Python)
 
-# Example usage
-matplotlib (Python) The python file python/Random_python.py can be run from the command line by typing:
-
-<> python python/Random_python.py
-
 This requires a working Python distribution (so that the python executable exists) with the Python package numpy and latex also installed.
 
